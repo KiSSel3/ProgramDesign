@@ -1,0 +1,33 @@
+  ADDR B1 B2 B3 B4 D:\Programming\SecondCourse\ProgramDesign\lab1.  PAGE       1
+
+                    org $8000  //
+
+  8000 B6 80 00     ldaa $8000 //       $8000
+  8003 36           psha       //
+
+  8004 B6 80 01     ldaa $8001 //       $8001
+  8007 36           psha       //
+
+  8008 B6 80 02     ldaa $8002 //       $8002
+  800B 36           psha       //
+
+  800C B6 80 03     ldaa $8003 //       $8003
+  800F 36           psha       //
+
+  8010 B6 80 04     ldaa $8004 //       $8004
+  8013 36           psha       //
+
+  8014 B6 80 05     ldaa $8005 //       $8005
+  8017 36           psha       //
+
+  8018 B6 80 06     ldaa $8006 //       $8006
+  801B 36           psha       //
+
+  801C B6 80 07     ldaa $8007 //       $8007
+  801F 36           psha       //
+
+  8020 B6 80 08     ldaa $8008 //       $8008
+  8023 36           psha       //
+
+  8024 B6 80 09     ldaa $8009 //       $8009
+  8027 36           psha       //
