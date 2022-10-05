@@ -1,0 +1,7 @@
+  ADDR B1 B2 B3 B4 thrass11.tmp                                     PAGE       1
+
+                    org $8000
+
+  8000 DC 00        ldd $0
+  8002 10           sba
+  8003 4C           inca

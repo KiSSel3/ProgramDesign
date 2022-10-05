@@ -1,0 +1,10 @@
+  ADDR B1 B2 B3 B4 thrass11.tmp                                     PAGE       1
+
+                    org $8000 //
+
+  8000 86 0A        ldaa #10   //       $00
+  8002 C6 14        ldab #20   //   B    $01
+  8004 10           sba       //
+
+
+
