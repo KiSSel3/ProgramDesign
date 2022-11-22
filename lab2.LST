@@ -2,9 +2,10 @@
 
                     org $8000 //
 
-  8000 86 0A        ldaa #10   //       $00
-  8002 C6 14        ldab #20   //   B    $01
-  8004 10           sba       //
-
+  8000 96 00        ldaa $0   //       $00
+  8002 D6 01        ldab $1   //   B    $01
+                    sab      //
+E                   ^ Unknown instruction or directive.
+  8004 4C           inca      //
 
 

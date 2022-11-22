@@ -1,8 +1,15 @@
-  ADDR B1 B2 B3 B4 thrass11.tmp                                     PAGE       1
+  ADDR B1 B2 B3 B4 D:\Programming\SecondCourse\ProgramDesign\lab3.  PAGE       1
 
-                    org $8000
+                    org $8000         //
 
-  8000 4F           clra
+  8000 86 6D        ldaa #%01101101   //     01101101( )
+  8002 C6 33        ldab #%00110011   //     00110011( )
 
-  8001 0D           sec
-  8002 89 00        adca #0
+  8004 97 00        staa $0           //  0
+  8006 D4 00        andb $0           //  " "     0
+  8008 D7 00        stab $0           //  0
+
+  800A 98 00        eora $0           //  " "     0
+
+
+

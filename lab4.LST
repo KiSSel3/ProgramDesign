@@ -1,0 +1,33 @@
+  ADDR B1 B2 B3 B4 thrass11.tmp                                     PAGE       1
+
+                    org $9000
+
+  9000 96 00        ldaa $0
+  9002 D6 FF        ldab $ff
+  9004 CE 82 00     ldx  #$8200
+  9007 18 CE 00 00  ldy  #$0
+
+  900B 01           nop
+
+                   for:
+  900C 37           pshb
+
+  900D E6 00        ldab $0,x
+  900F 2F 03        ble metka
+
+  9011 4C           inca
+  9012 18 3A        aby
+
+                   metka:
+  9014 33           pulb
+
+  9015 08           inx
+  9016 5A           decb
+  9017 26 F3        bne for
+
+
+
+  Symbol Table 
+
+  FOR                900C
+  METKA              9014
